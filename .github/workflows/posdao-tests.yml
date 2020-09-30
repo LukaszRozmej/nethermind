@@ -7,10 +7,6 @@ on:
   workflow_dispatch:
     branches:
     - '*'
-    tags:
-    - '*'
-    pull_request:
-    - '*'
 
 jobs:
   posdao-tests:
