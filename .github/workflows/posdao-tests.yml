@@ -4,7 +4,13 @@ on:
   push:
     tags:
     - '*'
-  [workflow_dispatch]
+  workflow_dispatch:
+    branches:
+    - '*'
+    tags:
+    - '*'
+    pull_request:
+    - '*'
 
 jobs:
   posdao-tests:
